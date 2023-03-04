@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 
 /* Container */
@@ -45,4 +44,33 @@ section {
 
 .cv {
     background: #eeeded;
+}
+
+/* Titles */
+h1 {
+    font-family: 'Courier New', monospace;
+    font-size: 10vh;
+    color: #36454F;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Input */
+input {
+    width: 10vw;
+    margin: 0 auto;
+    display: inline;
+}
+
+p {
+    font-family: 'Courier New', monospace;
+    font-size: 3vh;
+    color: #36454F;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    justify-content: center;
+    align-items: center;
 }
