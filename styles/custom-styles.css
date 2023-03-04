@@ -1,0 +1,48 @@
+/* All elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Container */
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+/* Sections */
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+/* Specific sections */
+.home {
+    background: #eeeded;
+}
+
+.about {
+    background: #8d99ae;
+}
+
+.publications {
+    background: #a7b9ac;
+}
+
+.presentations {
+    background: #789cab;
+}
+
+.skills {
+    background: #f5ada5;
+}
+
+.cv {
+    background: #eeeded;
+}
