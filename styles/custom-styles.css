@@ -5,12 +5,60 @@
     box-sizing: border-box;
 }
 
-/* Container */
+/* Containers */
 .container {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
     width: 100vw;
+}
+
+/* Menu container */
+.menu-container {
+    position: fixed;
+    width: 100vw;
+    top: 2vh;   
+    z-index: 10; 
+    border-bottom: 0.3vh dashed #E7E5DA;
+}
+
+.menu-container.about {
+    border-bottom: 0.3vh dashed #C2C0AA;
+}
+
+/* Menu lists */
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin-right: 2vh;
+    padding: 0;
+}
+
+/* Menu items */
+.menu li {
+    margin-left: 2vh; 
+    font-family: 'palatino', serif;
+    font-size: 2vh;
+    color: #36454F;
+}
+
+/* Title container */
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
+
+/* Contact container */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
 }
 
 /* All sections */
@@ -25,42 +73,50 @@ section {
 }
 
 /* Specific sections */
-.home {
-    background: #eeeded;
+#home {
+    background: #C2C0AA;
 }
 
-.about {
-    background: #8d99ae;
+#about {
+    background: #E7E5DA;
 }
 
-.publications {
-    background: #a7b9ac;
+#publications {
+    background: #C2C0AA;
 }
 
-.presentations {
-    background: #789cab;
+#policy {
+    background: #E7E5DA;
 }
 
-.skills {
-    background: #f5ada5;
+#skills {
+    background: #C2C0AA;
 }
 
-.cv {
-    background: #eeeded;
+#cv {
+    background: #E7E5DA;
+}
+
+#contact {
+    background: #C2C0AA;
 }
 
 /* Titles */
 h1 {
-    font-family: 'Courier New', monospace;
-    font-size: 10vh;
+    font-family: 'palatino', serif;
+    font-size: 8vh;
     color: #36454F;
-    justify-content: center;
-    align-items: center;
+}
+
+h2 {
+    font-family: 'palatino', serif;
+    font-size: 4vh;
+    color: #36454F;
 }
 
 /* Buttons */
 .btn {
-    font-family: 'Courier New', monospace;
+    font-family: 'palatino', serif;
     font-size: 4vh;
     background:#36454F;
     width: 10vw;
@@ -80,7 +136,7 @@ h1 {
 
 /* All paragraphs */
 p {
-    font-family: 'Courier New', monospace;
+    font-family: 'palatino', serif;
     font-size: 3vh;
     color: #36454F;
     justify-content: center;
@@ -102,6 +158,3 @@ ul {
 .list-inline-item:not(:last-child) {
     margin-right: 1rem;
 }
-
-
-
